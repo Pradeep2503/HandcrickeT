@@ -289,6 +289,7 @@ const Gamsav = () => {
 
 
 
+
         </div>
         <div className='basis-1/2 pt-5 border border-sky-100'>
           <div className='bg-sky-100 text-black'>
