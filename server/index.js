@@ -41,7 +41,7 @@ app.get('/', async (req, res) => {
   });
 
   
-app.post('/GAMSAV', async (req, res) => {
+app.post('/', async (req, res) => {
   try {
     const {winners,runs} = req.body;
     const PPlayerModel = new PlayerModel({winners,runs});
