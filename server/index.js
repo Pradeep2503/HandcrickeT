@@ -29,7 +29,7 @@ const PlayerSchema = new mongoose.Schema({
 // Creating model objects 
 const PlayerModel = mongoose.model('handcricket_collections', PlayerSchema);
 
-app.get('/', async (req, res) => {
+app.get('/GAMSAV', async (req, res) => {
     try {
       const players = await PlayerModel.find({});
       console.log(players);
