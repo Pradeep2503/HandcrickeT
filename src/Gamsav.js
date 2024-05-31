@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 
+
+
 const Gamsav = () => {
 
     var location=useLocation();
@@ -223,7 +225,7 @@ const Gamsav = () => {
 
     function sv(winners,runs)
     {
-      axios.post("http://localhost:3001/GAMSAV", { winners,runs })
+      axios.post("https://ht-app-bk-s.onrender.com", { winners,runs })
       .then((result) => console.log(result))
       .catch((result) => console.log(result));
 

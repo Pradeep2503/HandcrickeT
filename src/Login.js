@@ -9,7 +9,7 @@ const Login = () => {
   const [Highwins, setHighwins] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001")
+    axios.get("https://ht-app-bk-s.onrender.com")
       .then((result) => {
         setHighscore(result.data);
         setHighwins(result.data);
@@ -86,6 +86,7 @@ const Login = () => {
 
   return (
     <div>
+
 
 
     <div className='flex flex-row h-lvh'>
