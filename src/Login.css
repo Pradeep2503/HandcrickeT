@@ -1,0 +1,8 @@
+#setbkimage {
+    background-image: url('/src/Components/loginpagelogo.jpg'); /* Update with your image path */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    height: 98vh; /* Adjust as needed */
+  }
+  
