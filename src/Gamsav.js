@@ -225,7 +225,7 @@ const Gamsav = () => {
 
     function sv(winners,runs)
     {
-      axios.post("https://ht-app-bk-s.onrender.com", { winners,runs })
+      axios.post("https://ht-app-bk-s.onrender.com/GAMSAV", { winners,runs })
       .then((result) => console.log(result))
       .catch((result) => console.log(result));
 
