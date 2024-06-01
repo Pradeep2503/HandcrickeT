@@ -41,18 +41,11 @@ app.get('/', async (req, res) => {
   });
 
   
-app.post('/GAMSAV', async (req, res) => {
-  try {
-    const {winners,runs} = req.body;
-    const PPlayerModel = new PlayerModel({winners,runs});
-    await PPlayerModel.save()
-    res.status(201).json({ message: "Player Saved successfully" });
-    
-  } catch (error) {
-    console.error("Error saving Player:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
+app.post('/GAMSAV', (req, res) => {
+   PlayerModel.create(req.body)
+    .then((pl)=>res.json(pl))
+    .catch((ps)=>res.json(ps))
+  });
 
 
 
