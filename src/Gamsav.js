@@ -395,7 +395,7 @@ const Gamsav = () => {
 
           <div id="svbt" className='mb-8 bg-sky-100' style={{visibility:"hidden"}}>
           <button onClick={()=>{sv(wrid,wrscr)}} class="  w-6/6 justify-center rounded-md  bg-sky-500 px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm hover:bg-indigo-500 transition delay-150 duration-300 ease-in-out ">
-            SAVE</button>
+            Save & refresh to change leaderboard</button>
           </div>
 
 
