@@ -26,7 +26,7 @@ const PlayerSchema = new mongoose.Schema({
     runs:String
 }); 
     
-// Creating model objects 
+// Creating model objectss
 const PlayerModel = mongoose.model('handcricket_collections', PlayerSchema);
 
 app.get('/', async (req, res) => {
